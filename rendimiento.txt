@@ -1,0 +1,29 @@
+Comando:
+    apipecker 100 10 500 http://localhost:8008/api/v1/chocolates
+
+Resultado
+    Stress configuration:
+  - Concurrent users: 100
+  - Iterations: 10
+  - Delay: 500
+  - URL: <http://localhost:8008/api/v1/chocolates>
+Stressing:
+  -> iteration1 completed (1/10 of 10)
+  -> iteration2 completed (2/10 of 10)
+  -> iteration3 completed (3/10 of 10)
+  -> iteration4 completed (4/10 of 10)
+  -> iteration5 completed (5/10 of 10)
+  -> iteration6 completed (6/10 of 10)
+  -> iteration7 completed (7/10 of 10)
+  -> iteration8 completed (8/10 of 10)
+  -> iteration9 completed (9/10 of 10)
+  -> iteration10 completed (10/10 of 10)
+
+Result:
+{
+  "count": 1000,
+  "min": 33.237,
+  "max": 187.913,
+  "mean": 96.569,
+  "std": 36.688
+}

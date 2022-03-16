@@ -1,0 +1,1424 @@
+{
+    "item": [
+        {
+            "id": "d28d3420-0784-482a-bb67-d803c18bb175",
+            "name": "get Chocolates",
+            "request": {
+                "name": "get Chocolates",
+                "description": {
+                    "content": "Returns all chocolates",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "api",
+                        "v1",
+                        "chocolates"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "1bd47c5d-3e03-449e-a98b-19ca706d571c",
+                    "name": "Chocolate List",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "[\n  {\n    \"name\": \"deserunt adipisicing dolore lab\",\n    \"owner\": \"incididunt tempor adipisicing dolor irure\",\n    \"tipo\": \"in magna deserunt\",\n    \"frutos_secos\": false,\n    \"precio\": -3034786.2514213324\n  },\n  {\n    \"name\": \"nulla esse\",\n    \"owner\": \"adipisicing laborum in\",\n    \"tipo\": \"ipsum\",\n    \"frutos_secos\": true,\n    \"precio\": 75294716.45271948\n  }\n]",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                },
+                {
+                    "id": "6cf16732-a65f-44a5-876a-990a7b82de81",
+                    "name": "Error in connection to DB",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "409a533e-4e14-4dae-9f08-2a9dac6e4396",
+                    "name": "unexpected error",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n  \"code\": -34829445,\n  \"message\": \"adipisicin\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "6aeff7bd-b937-4ddd-b449-2645102bee21",
+            "name": "add Chocolate",
+            "request": {
+                "name": "add Chocolate",
+                "description": {
+                    "content": "Creates a new chocolate",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "api",
+                        "v1",
+                        "chocolates"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "0d5dab2c-e3d2-4fa4-a580-c8bb4e02c46e",
+                    "name": "Chocolate created",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Created",
+                    "code": 201,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "f9014ff7-c11c-404d-ab02-6c20797ba04e",
+                    "name": "POST without data",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "3c67d5ba-6c24-499a-a20c-f4f954d67c75",
+                    "name": "The chocolate already exists",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Conflict",
+                    "code": 409,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "55f5be26-733c-4af9-8021-49edc0516e63",
+                    "name": "The chocolate is not well-formed",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+                    "code": 422,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "94628443-fe60-4347-b7e5-f4295103540b",
+                    "name": "Error in connection to DB",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "39e74b96-cac7-4e7b-bdee-9b72a591a642",
+                    "name": "unexpected error",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n  \"code\": -34829445,\n  \"message\": \"adipisicin\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "9193ef8a-600d-4b84-80a2-9e75da7da92b",
+            "name": "find Chocolate Byname",
+            "request": {
+                "name": "find Chocolate Byname",
+                "description": {
+                    "content": "Returns a chocolate by name",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "api",
+                        "v1",
+                        "chocolates",
+                        ":name"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "sunt fug",
+                            "key": "name",
+                            "description": "(Required) name of chocolate to fetch"
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "0c904d31-8149-4519-9450-26a05ccfb4e8",
+                    "name": "Chocolate returned",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                },
+                {
+                    "id": "05784212-445f-45df-8a2a-ef415cc41fd3",
+                    "name": "GET request without name",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "61928b66-a930-4fc0-af5a-dc4fafe0adbe",
+                    "name": "There are no chocolates with this name",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "2a91831e-bdf7-4bb0-8933-8464b262924b",
+                    "name": "Error in connection to DB",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "9b9fb48c-7c87-4a29-b523-24d379cbe04d",
+                    "name": "unexpected error",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n  \"code\": -34829445,\n  \"message\": \"adipisicin\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "fc8425b2-5627-4014-9030-de7df5d1f6a0",
+            "name": "delete Chocolate",
+            "request": {
+                "name": "delete Chocolate",
+                "description": {
+                    "content": "Deletes a single chocolate based on the name",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "api",
+                        "v1",
+                        "chocolates",
+                        ":name"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "sunt fug",
+                            "key": "name",
+                            "description": "(Required) ID of chocolate to delete"
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "DELETE",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "904a6d41-3784-4be4-bb98-4d13acdf04cf",
+                    "name": "chocolate deleted",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to delete"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "No Content",
+                    "code": 204,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "55bb6b39-dcf6-44e4-920e-e52420feb97c",
+                    "name": "DELETE request without name",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to delete"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "c53b624f-671d-4252-a478-8f62c13ad088",
+                    "name": "There are no chocolates with this name",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to delete"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "e349d978-0956-4d9a-b71a-1bd61218d74b",
+                    "name": "Error in connection to DB",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to delete"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "27a2a440-217e-4701-adfa-c297b1a2db00",
+                    "name": "unexpected error",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to delete"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n  \"code\": -34829445,\n  \"message\": \"adipisicin\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "4a167a66-54fd-4491-9d21-98010a194cd2",
+            "name": "update Chocolate",
+            "request": {
+                "name": "update Chocolate",
+                "description": {
+                    "content": "Update a chocolate based on its name",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "api",
+                        "v1",
+                        "chocolates",
+                        ":name"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "sunt fug",
+                            "key": "name",
+                            "description": "(Required) ID of chocolate to put"
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "PUT",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "51c13e47-df1e-4a43-aacf-e2be8de549aa",
+                    "name": "chocolate updated",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to put"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "No Content",
+                    "code": 204,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "f9f007e5-7ae2-4072-b71a-f15e8d2aba11",
+                    "name": "PUT request without data",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to put"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Bad Request",
+                    "code": 400,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "b53476ba-3d00-4e83-918d-43f56d170d1d",
+                    "name": "There are no chocolates with this name",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to put"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Not Found",
+                    "code": 404,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "8b6f86c3-377e-4b0c-8c34-305c59d87e67",
+                    "name": "The chocolate is not well-formed",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to put"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+                    "code": 422,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "e57d71e9-3aa0-4899-b1b1-69553662a1b3",
+                    "name": "Error in connection to DB",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to put"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "ecd1ee85-1ff7-45ca-b202-2f97983ff6b6",
+                    "name": "unexpected error",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "chocolates",
+                                ":name"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) ID of chocolate to put"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"name\": \"nostrud a\",\n  \"owner\": \"Lorem\",\n  \"tipo\": \"proident veniam Lorem\",\n  \"frutos_secos\": true,\n  \"precio\": -56200296.125384286\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n  \"code\": -34829445,\n  \"message\": \"adipisicin\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "78b8d44c-51e1-4697-a251-5f1f3785b645",
+            "name": "get Analytics",
+            "request": {
+                "name": "get Analytics",
+                "description": {
+                    "content": "Returns statistics",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "api",
+                        "v1",
+                        "analytics"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "sunt fug",
+                            "key": "name",
+                            "description": "(Required) name of chocolate to fetch"
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "40df8cc7-1927-44fc-bcf4-ee90e07b7868",
+                    "name": "Statistics returned",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "analytics"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "ecbec164-1f39-43a5-b321-2dda057c7cda",
+                    "name": "Error in connection to DB",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "analytics"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                },
+                {
+                    "id": "49edd221-dfed-4edb-a9da-af367a31e5a7",
+                    "name": "unexpected error",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "api",
+                                "v1",
+                                "analytics"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "sunt fug",
+                                    "key": "name",
+                                    "description": "(Required) name of chocolate to fetch"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": "{\n  \"code\": -34829445,\n  \"message\": \"adipisicin\"\n}",
+                    "cookie": [],
+                    "_postman_previewlanguage": "json"
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "type": "string",
+            "value": "/",
+            "key": "baseUrl"
+        }
+    ],
+    "info": {
+        "_postman_id": "d7242b5c-4502-4716-84af-f7ce55f62ca8",
+        "name": "Chocolate list",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "This is an OpenAPI Specification created by oas-wizard (https://github.com/pafmon/oas-wizard)  \n\nContact Support:\n Name: PabloFM\n Email: pablofm@us.es",
+            "type": "text/plain"
+        }
+    }
+}

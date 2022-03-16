@@ -1,0 +1,171 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Chocolate list
+  description: >-
+    This is an OpenAPI Specification created by oas-wizard
+    (https://github.com/pafmon/oas-wizard)  
+  contact:
+    name: PabloFM
+    email: pablofm@us.es
+    url: http://www.isa.us.es
+  license:
+    name: MIT
+    url: http://opensource.org/licenses/MIT
+paths:
+  /api/v1/chocolates:
+    get:
+      description: Returns all chocolates
+      operationId: getChocolates
+      responses:
+        200:
+          description: Chocolate List
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/chocolate'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/errorModel'
+    post:
+      description: Creates a new chocolate
+      operationId: addChocolate
+      responses:
+        201:
+          description: chocolate created
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/errorModel'
+      requestBody:
+        x-name: chocolate
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/chocolate'
+        description: Chocolate to be created
+        required: true
+  /api/v1/chocolates/{name}:
+    get:
+      description: Returns a chocolate by name
+      operationId: findChocolateByname
+      parameters:
+        - name: name
+          in: path
+          description: name of chocolate to fetch
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Chocolate returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/chocolate'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/errorModel'
+    delete:
+      description: deletes a single chocolate based on the name
+      operationId: deleteChocolate
+      parameters:
+        - name: name
+          in: path
+          description: name of chocolate to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        204:
+          description: chocolate deleted
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/errorModel'
+    put:
+      description: Update a chocolate based on its name
+      operationId: updateChocolate
+      parameters:
+        - name: name
+          in: path
+          description: ID of chocolate to put
+          required: true
+          schema:
+            type: string
+      responses:
+        204:
+          description: chocolate updated
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/errorModel'
+      requestBody:
+        x-name: chocolate
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/chocolate'
+        description: Chocolate to be updated
+        required: true
+   /api/v1/analytics:
+    get:
+      description: Returns analitycs
+      operationId: getAnalytics
+      responses:
+        200:
+          description: Analytics
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/errorModel'
+components:
+  schemas:
+    errorModel:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+    chocolate:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 1
+        owner:
+          type: string
+        tipo:
+          type: string
+          minLength: 1
+        frutos_secos:
+          type: boolean
+        precio:
+          type: number
+      required:
+        - name
+        - owner
+        - tipo
+        - frutos_secos
+        - precio
